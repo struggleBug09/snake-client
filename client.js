@@ -16,13 +16,7 @@ const connect = function () {
 
   conn.on('connect', () => {
     console.log('Successfully connected to game server!');
-
-    // // Execute commands with a delay of 50ms between each
-    // setTimeout(() => conn.write("Name: ZXC"),0);
-    // setTimeout(() => conn.write("Move: up"), 50);
-    // setTimeout(() => conn.write("Move: left"), 150);
-    // setTimeout(() => conn.write("Move: left"), 250);
-    // setTimeout(() => conn.write("Move: down"), 350);
+    conn.write("Name: ZXC");
   });
 
   return conn;
